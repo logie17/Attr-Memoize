@@ -7,7 +7,7 @@ subtest "General memoize subclass test" => sub {
   {
     package Test;
     use parent 'AttrMemoize';
-    sub new : Memoize { bless {} };
+    sub new : ClassMemoize { bless {} };
 
   }
   my $test;
